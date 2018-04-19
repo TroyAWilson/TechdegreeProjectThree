@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+main{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.main-header{
+  background-color: grey;
+  color: white;
+  margin-top: 0;
+}
+.main-header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.topSignup {
+  border-bottom: 5px double black;
+}
+.topSignup p {
+  font-size: 1.3em;
+}
+.contactInfo{
+ margin: 25px;
+}
+.contactInfo form
+{  display:flex;
+  flex-direction: column;
+}
+.newsletterInfo{
+  border-top: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fieldset {
+    border: 0;
+}
+
+
+/* Media Queries */
