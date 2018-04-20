@@ -6,33 +6,33 @@
     <title>Techdeg3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- needs font link  -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   </head>
 
   <body>
 
-    <header class = "main-header">
+    <header class ="main-header">
       <h1> The Code Review <h1>
     </header>
 
     <main>
 
-      <div class = "topSignup">
+      <div class="topSignup">
           <h2>Signup for our newsletter</h2>
           <p>
              Get the latest news on how your code is
              doing right in your inbox
           </p>
       </div>
-      <div class "signSheet">
+      <div class="signSheet">
 
-      <div class = "contactInfo">
+      <div class = " contactInfo">
         <h2>Contact Information</h2>
         <form>
           <label for = "nameInput"> Full Name </label>
-          <input type="text" id="nameInput" name="name_input">
+          <input type="text" id="nameInput" name="name_input" placeholder="Required">
           <label for = "emailInput"> Email Address </label>
-          <input type="email" id="emailInput" name="email_input">
+          <input type="email" id="emailInput" name="email_input" placeholder="Required">
           <label for = "phoneInput"> Phone Number </label>
           <input type="tel" id="phoneInput" name="phone_input">
           <label for = "addressInput"> Street Address </label>
@@ -42,6 +42,7 @@
           <label for = "stateInput"> State </label>
           <select id="stateInput" name="state_input">
               <!--  Put all of state options here -->
+              <option value ="" disabled selected> Choose state </option>
               <option value="alabama">AL</option>
               <option value="alaska">AK</option>
               <option value="arizona">AZ</option>
@@ -95,39 +96,51 @@
 
           </select>
           <label for = "zipInput"> Zip Code </label>
-          <input type="text" id="zipInput" name="zip_input">
+          <input class = "zipClass" type="text" id="zipInput" name="zip_input">
         </form>
       </div>
 
       <div class = "newsletterInfo">
         <h2>Newsletter</h2>
-        <form>
+        <form class ="newsForm">
 
           <fieldset>
             <label>Select the Newsletter you would to recieve</label> <br>
-
-            <input type="checkbox" id ="newsLetterHTML" value="newsLetterHTML" name="newsLetter">
+            <div class ="flexAlign">
+            <input type="checkbox" id ="newsLetterHTML" class ="newsCheckbox" value="newsLetterHTML" name="newsLetter">
               <label for ="newsLetterHTML">HTML News</label> <br>
-            <input type="checkbox" id ="newsLetterCSS" value="newsLetterCSS" name="newsLetter">
+            </div>
+
+            <div class ="flexAlign">
+            <input type="checkbox" id ="newsLetterCSS" class ="newsCheckbox" value="newsLetterCSS" name="newsLetter">
               <label for ="newsLetterCSS">CSS News</label> <br>
-            <input type="checkbox" id ="newsLetterJava" value="newsLetterJava" name="newsLetter">
+            </div>
+            <div class ="flexAlign">
+            <input type="checkbox" id ="newsLetterJava" class ="newsCheckbox" value="newsLetterJava" name="newsLetter">
               <label for ="newsLetterJava">Javascript News</label>
+            </div>
+
           </fieldset>
 
           <fieldset>
             <label> Newsletter format </label> <br>
-
+            <div class = "flexAlign">
             <input type="radio" id="newsHTML" value ="newsHTML" name="news_format">
               <label for="newsHTML"> HTML </label>
+            </div>
+
+            <div class = "flexAlign">
             <input type="radio" id="newsText" value ="newsText" name="news_format">
               <label for="newsHTML"> Plain text </label> <br>
+            </div>
+
               <fieldset>
                 <label>Other topics you'd like to hear about</label> <br>
                   <textarea>
                   </textarea>
               </fieldset>
           </fieldset>
-          <button type="button">Sign up</button>
+          <button class ="signButton" type="button">Sign up</button>
         </form>
       </div>
     </div>
