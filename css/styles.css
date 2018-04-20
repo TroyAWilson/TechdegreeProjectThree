@@ -92,10 +92,7 @@ input::placeholder {
 .flexAlign label {
   margin-left: 5px;
 }
-.otherComment label{
-  margin-bottom: 100px;
 
-}
 textarea {
   width: 100%;
   border: none;
@@ -106,6 +103,23 @@ textarea {
   margin-top: 15px;
 
 }
+
+ /* Testing button stuff */
+
+
+
+ input[type="checkbox"] {
+     border: red 1px solid;
+     color: red;
+}
+  input {
+    border: red 1px solid;
+    background-color: red;
+  }
+
+/* end of button test  */
+
+
 
 .newsForm button {
   width: 90%;
