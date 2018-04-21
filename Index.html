@@ -29,18 +29,34 @@
       <div class = " contactInfo">
         <h2>Contact Information</h2>
         <form>
-          <label for = "nameInput"> Full Name </label>
-          <input type="text" id="nameInput" name="name_input" placeholder="Required">
-          <label for = "emailInput"> Email Address </label>
-          <input type="email" id="emailInput" name="email_input" placeholder="Required">
-          <label for = "phoneInput"> Phone Number </label>
-          <input type="tel" id="phoneInput" name="phone_input">
-          <label for = "addressInput"> Street Address </label>
-          <input type="text" id="addressInput" name="address_input">
-          <label for = "cityInput"> City </label>
-          <input type="text" id="cityInput" name="city_input">
-          <label for = "stateInput"> State </label>
-          <select id="stateInput" name="state_input">
+          <div class ="contactFlex">
+            <label for = "nameInput"> Full Name </label>
+            <input type="text" id="nameInput" name="name_input" placeholder="Required">
+          </div>
+
+          <div class ="contactFlex">
+            <label for = "emailInput"> Email Address </label>
+            <input type="email" id="emailInput" name="email_input" placeholder="Required">
+          </div>
+
+          <div class ="contactFlex">
+            <label for = "phoneInput"> Phone Number </label>
+            <input type="tel" id="phoneInput" name="phone_input">
+          </div>
+
+          <div class ="contactFlex">
+            <label for = "addressInput"> Street Address </label>
+            <input type="text" id="addressInput" name="address_input">
+          </div>
+
+          <div class ="contactFlex">
+            <label for = "cityInput"> City </label>
+            <input type="text" id="cityInput" name="city_input">
+          </div>
+
+          <div class ="contactFlex">
+            <label for = "stateInput"> State </label>
+            <select id="stateInput" name="state_input">
               <!--  Put all of state options here -->
               <option value ="" disabled selected> Choose state </option>
               <option value="alabama">AL</option>
@@ -95,8 +111,12 @@
               <option value="wyoming">WY</option>
 
           </select>
-          <label for = "zipInput"> Zip Code </label>
+        </div>
+
+        <div class ="contactFlex">
+          <label for="zipInput"> Zip Code </label>
           <input class = "zipClass" type="text" id="zipInput" name="zip_input">
+        </div>
         </form>
       </div>
 
@@ -106,17 +126,30 @@
 
           <fieldset>
             <label>Select the Newsletter you would to recieve</label> <br>
+
+            <!--  HTML checkbox -->
             <div class ="flexAlign">
-            <input type="checkbox" id ="newsLetterHTML" class ="newsCheckbox" value="newsLetterHTML" name="newsLetter">
+              <div class ="checkDiv">
+                <input type="checkbox" id ="newsLetterHTML" class ="newsCheckbox" value="newsLetterHTML" name="newsLetter">
+                <label id ="checkTest" for = "newsLetterHTML"></label>
+              </div>
               <label for ="newsLetterHTML">HTML News</label> <br>
             </div>
-
+            <!--  CSS checkbox  -->
             <div class ="flexAlign">
-            <input type="checkbox" id ="newsLetterCSS" class ="newsCheckbox" value="newsLetterCSS" name="newsLetter">
+              <div class="checkDiv">
+                <input type="checkbox" id ="newsLetterCSS" class ="newsCheckbox" value="newsLetterCSS" name="newsLetter">
+                <label id ="checkTest" for = "newsLetterCSS"></label>
+              </div>
               <label for ="newsLetterCSS">CSS News</label> <br>
             </div>
+
+            <!-- Java checkbox  -->
             <div class ="flexAlign">
-            <input type="checkbox" id ="newsLetterJava" class ="newsCheckbox" value="newsLetterJava" name="newsLetter">
+              <div class="checkDiv">
+                <input type="checkbox" id ="newsLetterJava" class ="newsCheckbox" value="newsLetterJava" name="newsLetter">
+                <label id ="checkTest" for = "newsLetterJava"></label>
+              </div>
               <label for ="newsLetterJava">Javascript News</label>
             </div>
 
@@ -124,17 +157,25 @@
 
           <fieldset>
             <label> Newsletter format </label> <br>
+
+            <!-- Radio HTML  -->
             <div class = "flexAlign">
-            <input type="radio" id="newsHTML" value ="newsHTML" name="news_format">
-              <label for="newsHTML"> HTML </label>
+                <label class ="radContainer">HTML
+                <input type="radio" id="newsHTML" value ="newsHTML" name="news_format">
+                <span id="radTest" for="newsHTML"></span>
+                </label>
             </div>
 
-            <div class = "flexAlign">
-            <input type="radio" id="newsText" value ="newsText" name="news_format">
-              <label for="newsHTML"> Plain text </label> <br>
+
+            <!--  Radio Paper -->
+            <div class = "flexAlign" id="noMargin">
+                <label class ="radContainer"> Plain Text
+                <input type="radio" id="newsText" value ="newsText" name="news_format">
+                <span id="radTest" for="newsHTML"></span>
+                </label>
             </div>
 
-              <fieldset>
+              <fieldset class ="">
                 <label>Other topics you'd like to hear about</label> <br>
                   <textarea>
                   </textarea>
