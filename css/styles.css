@@ -137,7 +137,6 @@ textarea {
     border-radius: 5px;
 
 }
-
 .checkDiv [id ="checkTest"]::after{
   opacity: 0.2;
    content: '';
@@ -155,6 +154,7 @@ textarea {
 
 
 }
+
 .checkDiv [id ="checkTest"]:hover::after {
     opacity: 0.5;
 }
@@ -162,6 +162,7 @@ textarea {
 .checkDiv input[type=checkbox]:checked + [id ="checkTest"]:after {
     opacity: 1;
 }
+
 
 
  input[type="checkbox"],
@@ -191,7 +192,7 @@ textarea {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #70DBFF;
+    background-color: #69D9FF;
     border-radius: 50%;
 }
 .radContainer:hover input ~ #radTest {
@@ -240,7 +241,9 @@ textarea {
   padding-bottom: 40px;
   margin-bottom: 10px;
 }
-
+.newsForm button:active{
+  transform: scale(.98);
+}
 footer p {
   color:grey;
   margin-bottom: 200px;
@@ -280,7 +283,7 @@ fieldset {
   }
 
   .zipClass{
-    max-width: 30%;
+    max-width: 15%;
   }
   label[for="zipInput"]{
     max-width: 15%;
