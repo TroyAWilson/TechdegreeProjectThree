@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<hmtl>
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <body>
 
     <header class ="main-header">
-      <h1> The Code Review <h1>
+      <h1> The Code Review </h1>
     </header>
 
     <main>
@@ -27,8 +27,9 @@
       <div class="signSheet">
 
       <div class = " contactInfo">
-        <h2>Contact Information</h2>
-        <form>
+        <legend><h2>Contact Information</h2></legend>
+        <fieldset>
+          <form>
           <div class ="contactFlex">
             <label for = "nameInput"> Full Name </label>
             <input type="text" id="nameInput" name="name_input" placeholder="Required">
@@ -117,11 +118,12 @@
           <label for="zipInput"> Zip Code </label>
           <input class = "zipClass" type="text" id="zipInput" name="zip_input">
         </div>
+      </fieldset>
         </form>
       </div>
 
       <div class = "newsletterInfo">
-        <h2>Newsletter</h2>
+        <legend><h2>Newsletter</h2></legend>
         <form class ="newsForm">
 
           <fieldset>
@@ -131,7 +133,7 @@
             <div class ="flexAlign">
               <div class ="checkDiv">
                 <input type="checkbox" id ="newsLetterHTML" class ="newsCheckbox" value="newsLetterHTML" name="newsLetter">
-                <label id ="checkTest" for = "newsLetterHTML"></label>
+                <label class ="checkTest" for = "newsLetterHTML"></label>
               </div>
               <label for ="newsLetterHTML">HTML News</label> <br>
             </div>
@@ -139,7 +141,7 @@
             <div class ="flexAlign">
               <div class="checkDiv">
                 <input type="checkbox" id ="newsLetterCSS" class ="newsCheckbox" value="newsLetterCSS" name="newsLetter">
-                <label id ="checkTest" for = "newsLetterCSS"></label>
+                <label class ="checkTest" for = "newsLetterCSS"></label>
               </div>
               <label for ="newsLetterCSS">CSS News</label> <br>
             </div>
@@ -148,7 +150,7 @@
             <div class ="flexAlign">
               <div class="checkDiv">
                 <input type="checkbox" id ="newsLetterJava" class ="newsCheckbox" value="newsLetterJava" name="newsLetter">
-                <label id ="checkTest" for = "newsLetterJava"></label>
+                <label class ="checkTest" for = "newsLetterJava"></label>
               </div>
               <label for ="newsLetterJava">Javascript News</label>
             </div>
@@ -162,7 +164,7 @@
             <div class = "flexAlign">
                 <label class ="radContainer">HTML
                 <input type="radio" id="newsHTML" value ="newsHTML" name="news_format">
-                <span id="radTest" for="newsHTML"></span>
+                <span class="radTest"></span>
                 </label>
             </div>
 
@@ -171,7 +173,7 @@
             <div class = "flexAlign" id="noMargin">
                 <label class ="radContainer"> Plain Text
                 <input type="radio" id="newsText" value ="newsText" name="news_format">
-                <span id="radTest" for="newsHTML"></span>
+                <span class="radTest"></span>
                 </label>
             </div>
 

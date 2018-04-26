@@ -125,7 +125,7 @@ textarea {
   position: relative;
 
 }
-.checkDiv [id ="checkTest"] {
+.checkDiv [class ="checkTest"] {
     cursor: pointer;
     position: absolute;
     width: 20px;
@@ -137,7 +137,7 @@ textarea {
     border-radius: 5px;
 
 }
-.checkDiv [id ="checkTest"]::after{
+.checkDiv [class ="checkTest"]::after{
   opacity: 0.2;
    content: '';
    position: absolute;
@@ -155,11 +155,11 @@ textarea {
 
 }
 
-.checkDiv [id ="checkTest"]:hover::after {
+.checkDiv [class ="checkTest"]:hover::after {
     opacity: 0.5;
 }
 
-.checkDiv input[type=checkbox]:checked + [id ="checkTest"]:after {
+.checkDiv input[type=checkbox]:checked + [class ="checkTest"]:after {
     opacity: 1;
 }
 
@@ -186,7 +186,7 @@ textarea {
     opacity: 0;
     cursor: pointer;
 }
-#radTest{
+.radTest{
     position: absolute;
     top: 0;
     left: 0;
@@ -195,21 +195,21 @@ textarea {
     background-color: #69D9FF;
     border-radius: 50%;
 }
-.radContainer:hover input ~ #radTest {
+.radContainer:hover input ~ .radTest {
     background-color: #2BCAFF;
 }
-.radContainer input:checked ~ #radTest {
+.radContainer input:checked ~ .radTest {
     background-color: #2BCAFF;
 }
-#radTest:after {
+.radTest:after {
     content: "";
     position: absolute;
     display: none;
 }
-.radContainer input:checked ~ #radTest:after {
+.radContainer input:checked ~ .radTest:after {
     display: block;
 }
-.radContainer #radTest:after {
+.radContainer .radTest:after {
  	top: 6px;
 	left: 6px;
 	width: 8px;
