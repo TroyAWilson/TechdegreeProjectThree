@@ -27,7 +27,12 @@ main{
 .contactInfo{
     margin-bottom: 40px;
 }
-
+legend {
+ font-size: 25px;
+ margin: 10px;
+ padding-top: 10px;
+ font-weight: bold;
+}
 .contactInfo,
 .newsletterInfo {
   text-align: left;
@@ -86,9 +91,6 @@ input::placeholder {
   flex-wrap: wrap;
   flex-direction:row;
   border-top: 1px black solid;
-}
-.newsletterInfo h2 {
-  width: 100%;
 }
 .flexAlign {
   display: flex;

@@ -25,11 +25,10 @@
           </p>
       </div>
       <div class="signSheet">
-
+      <form>
       <div class = " contactInfo">
-        <legend><h2>Contact Information</h2></legend>
-        <fieldset>
-          <form>
+            <fieldset>
+              <legend>Contact Information</legend>
           <div class ="contactFlex">
             <label for = "nameInput"> Full Name </label>
             <input type="text" id="nameInput" name="name_input" placeholder="Required">
@@ -119,14 +118,14 @@
           <input class = "zipClass" type="text" id="zipInput" name="zip_input">
         </div>
       </fieldset>
-        </form>
+
       </div>
 
       <div class = "newsletterInfo">
-        <legend><h2>Newsletter</h2></legend>
-        <form class ="newsForm">
+        <div class ="newsForm">
 
           <fieldset>
+            <legend>Newsletter</legend>
             <label>Select the Newsletter you would to recieve</label> <br>
 
             <!--  HTML checkbox -->
@@ -184,8 +183,9 @@
               </fieldset>
           </fieldset>
           <button class ="signButton" type="button">Sign up</button>
-        </form>
+        </div>
       </div>
+      </form>
     </div>
     </main>
 
